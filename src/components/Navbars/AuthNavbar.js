@@ -31,14 +31,14 @@ export default function AuthNavbar(props) {
     return window.location.href.indexOf(routeName) > -1 ? true : false;
   };
   // Chakra color mode
-  let navbarIcon = useColorModeValue("gray.700", "gray.200");
+  let navbarIcon = useColorModeValue("#1A202C", "#1A202C");
   let mainText = useColorModeValue("gray.700", "gray.200");
   let navbarBg = useColorModeValue(
-    "linear-gradient(112.83deg, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.8) 110.84%)",
-    "linear-gradient(112.83deg, rgba(255, 255, 255, 0.21) 0%, rgba(255, 255, 255, 0) 110.84%)"
+    "linear-gradient(112.83deg, rgba(129, 230, 217, 0.82) 0%, rgba(129, 230, 217, 0.8) 110.84%)",
+    "linear-gradient(112.83deg, rgba(129, 230, 217, 0.21) 0%, rgba(255, 255, 255, 0))"
   );
   let navbarBorder = useColorModeValue(
-    "1.5px solid #FFFFFF",
+    "1.5px solid #81E6D9",
     "1.5px solid rgba(255, 255, 255, 0.31)"
   );
   let navbarShadow = useColorModeValue(
@@ -65,7 +65,7 @@ export default function AuthNavbar(props) {
     navbarBackdrop = "none";
     bgButton = "white";
     colorButton = "gray.700";
-    mainText = "white";
+    mainText = "#1A202C";
     navbarPosition = "absolute";
   }
   var brand = (
@@ -114,7 +114,7 @@ export default function AuthNavbar(props) {
             <PersonIcon color={navbarIcon} w="12px" h="12px" me="0px" />
           }
         >
-          <Text>Profile</Text>
+          <Text>Perfil</Text>
         </Button>
       </NavLink>
       <NavLink to="/auth/signup">
@@ -130,7 +130,7 @@ export default function AuthNavbar(props) {
             <RocketIcon color={navbarIcon} w="12px" h="12px" me="0px" />
           }
         >
-          <Text>Sign Up</Text>
+          <Text>Registrarse</Text>
         </Button>
       </NavLink>
       <NavLink to="/auth/signin">
@@ -145,7 +145,7 @@ export default function AuthNavbar(props) {
             <DocumentIcon color={navbarIcon} w="12px" h="12px" me="0px" />
           }
         >
-          <Text>Sign In</Text>
+          <Text>Ingresar</Text>
         </Button>
       </NavLink>
     </HStack>
@@ -184,22 +184,7 @@ export default function AuthNavbar(props) {
           />
         </Box>
         {linksAuth}
-        <Link href="https://creative-tim.com/product/purity-ui-dashboard">
-          <Button
-            bg={bgButton}
-            color={colorButton}
-            fontSize="xs"
-            variant="no-hover"
-            borderRadius="35px"
-            px="30px"
-            display={{
-              sm: "none",
-              lg: "flex",
-            }}
-          >
-            Free Download
-          </Button>
-        </Link>
+    
       </Flex>
     </Flex>
   );

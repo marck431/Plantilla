@@ -208,7 +208,7 @@ function SignUp() {
               _active={{
                 bg: "teal.400",
               }}>
-              SIGN UP
+             Registrarse
             </Button>
           </FormControl>
           <Flex
@@ -218,14 +218,14 @@ function SignUp() {
             maxW='100%'
             mt='0px'>
             <Text color={textColor} fontWeight='medium'>
-              Already have an account?
+            Ya tienes una cuenta?
               <Link
                 color={titleColor}
                 as='span'
                 ms='5px'
                 href='#'
                 fontWeight='bold'>
-                Sign In
+                Ingresar
               </Link>
             </Text>
           </Flex>
